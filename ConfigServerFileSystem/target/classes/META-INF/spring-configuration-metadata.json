@@ -1,0 +1,17 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "com.java.client.Prop",
+      "name": "spring.datasource",
+      "type": "com.java.client.Prop"
+    }
+  ],
+  "properties": [
+    {
+      "sourceType": "com.java.client.Prop",
+      "name": "spring.datasource.url",
+      "type": "java.lang.String"
+    }
+  ]
+}

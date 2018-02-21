@@ -1,0 +1,24 @@
+server.port: 8086
+
+security:
+  basic:
+    enabled: false
+    
+zuul:
+  routes:
+    uaa:
+      path: /uaa/**
+      url: ${targets.uaa}/
+    menu:
+      path: /menu/**
+      url: ${targets.menu}/menuItems/
+    myorders:
+      path: /myorders/**
+      url: ${targets.order}/myorders/
+
+---
+
+spring:
+  profiles: cloud 
+
+targets.scheme: http

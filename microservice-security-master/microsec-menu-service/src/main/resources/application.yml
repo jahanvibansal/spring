@@ -1,0 +1,10 @@
+server.port: 8083
+
+security:
+  basic:
+    enabled: false
+
+spring.oauth2:
+  resource:
+    jwt.keyUri: ${targets.uaa}/token_key
+

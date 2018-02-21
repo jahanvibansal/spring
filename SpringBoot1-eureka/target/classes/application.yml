@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: eureka-registry
+
+eureka:
+  client:
+      registerWithEureka: false
+      fetchRegistry: false
+     
+zuul:
+  prefix: /api
+  routes:
+    db-service:
+      path: /db-service/**
+      url: http://localhost:8300
+    stock-service:
+      path: /stock-service/**
+      url: http://localhost:3333
